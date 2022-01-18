@@ -7,14 +7,11 @@ import Information from '../containers/Information';
 import NotFound from '../containers/NotFound';
 import Payment from '../containers/Payment';
 import Success from '../containers/Success';
-import AppContext from '../context/AppContext';
-import useInitialState from '../hooks/useInitialState';
+import { AppStore } from '../context/AppContext';
 
 const Router = () => {
-    const initialState = useInitialState();
-
     return (
-        <AppContext.Provider value={initialState}>
+        <AppStore>
             <BrowserRouter>
                 <Layout>
                     <Routes>
@@ -39,7 +36,7 @@ const Router = () => {
                     </Routes>
                 </Layout>
             </BrowserRouter>
-        </AppContext.Provider>
+        </AppStore>
     );
 };
 

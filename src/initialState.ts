@@ -1,4 +1,8 @@
-export default {
+import { IAppInitialState } from './interfaces/AppInitialState';
+
+export const initialState: IAppInitialState = {
+    addToCart: () => {},
+    removeFromCart: () => {},
     cart: [],
     products: [
         {
