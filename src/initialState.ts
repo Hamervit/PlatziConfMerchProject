@@ -1,9 +1,13 @@
-import { IAppInitialState } from './interfaces/AppInitialState';
+import { IAppInitialState, IBuyer } from './interfaces/AppInterfaces';
 
 export const initialState: IAppInitialState = {
     addToCart: () => {},
     removeFromCart: () => {},
+    addToBuyer: () => {},
+    addNewOrder: () => {},
     cart: [],
+    buyer: {} as IBuyer,
+    orders: [],
     products: [
         {
             id: '1',
