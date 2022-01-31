@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import Product from './Product';
-import { IProduct } from '../interfaces/ProductInterface';
+import { IProduct } from '../interfaces/AppInterfaces';
 import '../styles/components/Products.css';
 import { AppContext } from '../context/AppContext';
 

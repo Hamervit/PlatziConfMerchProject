@@ -1,5 +1,6 @@
 import React from 'react';
-import { IProduct } from '../interfaces/ProductInterface';
+import { IProduct } from '../interfaces/AppInterfaces';
+
 
 interface ProductProps {
     product: IProduct;

@@ -1,4 +1,4 @@
-import { IProduct } from '../interfaces/ProductInterface';
+import { IProduct } from '../interfaces/AppInterfaces';
 
 export const getTotalSumFromCart = (array: IProduct[]) => {
     let totalSum = 0;
